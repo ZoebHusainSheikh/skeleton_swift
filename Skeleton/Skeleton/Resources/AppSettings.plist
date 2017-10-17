@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NetworkMode</key>
+	<string>LIVE</string>
+	<key>LocalURL</key>
+	<string>127.0.0.1</string>
+	<key>ProductionURL</key>
+	<string>wordsapiv1.p.mashape.com/words/</string>
+	<key>StagingURL</key>
+	<string>wordsapiv1.p.mashape.com/words/</string>
+	<key>URLPathSubstring</key>
+	<string></string>
+	<key>EnableSecureConnection</key>
+	<true/>
+	<key>EnablePullToRefresh</key>
+	<false/>
+	<key>EnableBanner</key>
+	<false/>
+	<key>EnableCoreData</key>
+	<false/>
+	<key>EnableTwitter</key>
+	<false/>
+	<key>EnableFacebook</key>
+	<false/>
+</dict>
+</plist>

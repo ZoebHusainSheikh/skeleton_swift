@@ -1,0 +1,112 @@
+PODS:
+  - Alamofire (4.5.1)
+  - KSCrash (1.15.12):
+    - KSCrash/Installations (= 1.15.12)
+  - KSCrash/Installations (1.15.12):
+    - KSCrash/Recording
+    - KSCrash/Reporting
+  - KSCrash/Recording (1.15.12):
+    - KSCrash/Recording/Tools (= 1.15.12)
+  - KSCrash/Recording/Tools (1.15.12)
+  - KSCrash/Reporting (1.15.12):
+    - KSCrash/Recording
+    - KSCrash/Reporting/Filters (= 1.15.12)
+    - KSCrash/Reporting/MessageUI (= 1.15.12)
+    - KSCrash/Reporting/Sinks (= 1.15.12)
+    - KSCrash/Reporting/Tools (= 1.15.12)
+  - KSCrash/Reporting/Filters (1.15.12):
+    - KSCrash/Recording
+    - KSCrash/Reporting/Filters/Alert (= 1.15.12)
+    - KSCrash/Reporting/Filters/AppleFmt (= 1.15.12)
+    - KSCrash/Reporting/Filters/Base (= 1.15.12)
+    - KSCrash/Reporting/Filters/Basic (= 1.15.12)
+    - KSCrash/Reporting/Filters/GZip (= 1.15.12)
+    - KSCrash/Reporting/Filters/JSON (= 1.15.12)
+    - KSCrash/Reporting/Filters/Sets (= 1.15.12)
+    - KSCrash/Reporting/Filters/Stringify (= 1.15.12)
+    - KSCrash/Reporting/Filters/Tools (= 1.15.12)
+  - KSCrash/Reporting/Filters/Alert (1.15.12):
+    - KSCrash/Recording
+    - KSCrash/Reporting/Filters/Base
+  - KSCrash/Reporting/Filters/AppleFmt (1.15.12):
+    - KSCrash/Recording
+    - KSCrash/Reporting/Filters/Base
+  - KSCrash/Reporting/Filters/Base (1.15.12):
+    - KSCrash/Recording
+  - KSCrash/Reporting/Filters/Basic (1.15.12):
+    - KSCrash/Recording
+    - KSCrash/Reporting/Filters/Base
+  - KSCrash/Reporting/Filters/GZip (1.15.12):
+    - KSCrash/Recording
+    - KSCrash/Reporting/Filters/Base
+  - KSCrash/Reporting/Filters/JSON (1.15.12):
+    - KSCrash/Recording
+    - KSCrash/Reporting/Filters/Base
+  - KSCrash/Reporting/Filters/Sets (1.15.12):
+    - KSCrash/Recording
+    - KSCrash/Reporting/Filters/AppleFmt
+    - KSCrash/Reporting/Filters/Base
+    - KSCrash/Reporting/Filters/Basic
+    - KSCrash/Reporting/Filters/GZip
+    - KSCrash/Reporting/Filters/JSON
+    - KSCrash/Reporting/Filters/Stringify
+  - KSCrash/Reporting/Filters/Stringify (1.15.12):
+    - KSCrash/Recording
+    - KSCrash/Reporting/Filters/Base
+  - KSCrash/Reporting/Filters/Tools (1.15.12):
+    - KSCrash/Recording
+  - KSCrash/Reporting/MessageUI (1.15.12):
+    - KSCrash/Recording
+  - KSCrash/Reporting/Sinks (1.15.12):
+    - KSCrash/Recording
+    - KSCrash/Reporting/Filters
+    - KSCrash/Reporting/Tools
+  - KSCrash/Reporting/Tools (1.15.12):
+    - KSCrash/Recording
+  - MarqueeLabel/Swift (3.1.3)
+  - NotificationBannerSwift (1.5.1):
+    - MarqueeLabel/Swift
+    - SnapKit (~> 4.0)
+  - ObjectMapper (3.0.0)
+  - ReachabilitySwift (4.1.0)
+  - Realm (2.10.2):
+    - Realm/Headers (= 2.10.2)
+  - Realm/Headers (2.10.2)
+  - SDWebImage (4.1.2):
+    - SDWebImage/Core (= 4.1.2)
+  - SDWebImage/Core (4.1.2)
+  - SMobiLog (2.0.0):
+    - KSCrash
+    - Realm
+  - SnapKit (4.0.0)
+  - SVPullToRefresh (0.4.1)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - NotificationBannerSwift
+  - ObjectMapper
+  - ReachabilitySwift
+  - Realm
+  - SDWebImage
+  - SMobiLog
+  - SVPullToRefresh
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  KSCrash: 931b6caeebfbfe0d316007fcd209f6cb9889c624
+  MarqueeLabel: baa5753dcbd36dca080e1f5c589a665aa5c906f1
+  NotificationBannerSwift: 666e6c392238561c17a52db4c50e6f00d9942e0d
+  ObjectMapper: 92230db59bf8f341a5c3a3cf0b9fbdde3cf0d87f
+  ReachabilitySwift: 6849231cd4e06559f3b9ef4a97a0a0f96d41e09f
+  Realm: 0ef72b837fb67e9f4b098bac771ddd72c7fdbb69
+  SDWebImage: cb6f9f266a9977741efcbc21e618e8be3734c774
+  SMobiLog: 6817dc75a3e0b926243f2e1042ead93e1d28160b
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 17a9e741164318b5f0911bbc7db2e205cf169e93
+
+COCOAPODS: 1.3.1

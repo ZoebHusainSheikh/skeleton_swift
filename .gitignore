@@ -65,3 +65,23 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
+
+## Python
+*.pyc
+*.py~
+
+## Generic
+*.*~
+*.html~
+*.DS_Store
+
+## Project files
+Skeleton/Skeleton/Lib/SMobiLogger/SMobiLogger.xcodeproj/xcuserdata/
+Skeleton/Skeleton/Lib/SMobiLogger/build
+Skeleton/Skeleton.xcodeproj/project.xcworkspace/
+Skeleton/Skeleton.xcodeproj/xcuserdata/
+Skeleton/Skeleton.xcodeproj/project.xcworkspace/xcuserdata/
+Skeleton/Pods/Pods.xcodeproj/xcuserdata/
+Skeleton/Skeleton.xcodeproj/project.xcworkspace/
+Skeleton/Skeleton.xcodeproj/xcuserdata/
+Skeleton/Skeleton.xcworkspace/xcuserdata/
