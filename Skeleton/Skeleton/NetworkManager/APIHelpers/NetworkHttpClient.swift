@@ -1,9 +1,9 @@
 //
 //  NetworkHttpClient.swift
-//  Skeleton
+//  SaitamaCycles
 //
-//  Created by BestPeers on 31/05/17.
-//  Copyright © 2017 BestPeers. All rights reserved.
+//  Created by Zoeb on 31/05/17.
+//  Copyright © 2017 Zoeb . All rights reserved.
 //
 
 import UIKit

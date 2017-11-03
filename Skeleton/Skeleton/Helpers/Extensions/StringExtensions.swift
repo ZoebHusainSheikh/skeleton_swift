@@ -748,7 +748,7 @@ public extension String {
 		return (self as NSString).appendingPathExtension(str)
 	}
     
-    //MARK: - Skeleton Extensions
+    //MARK: - SaitamaCycles Extensions
 	
     public static func isNilOrEmpty(string: String?) -> Bool {
         

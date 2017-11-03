@@ -87,7 +87,7 @@
 		4878156A1F947F4C00873D9F /* WordRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordRequest.swift; sourceTree = "<group>"; };
 		4878156C1F9483A300873D9F /* Interface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interface.swift; sourceTree = "<group>"; };
 		4878156E1F948C2600873D9F /* WordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordModel.swift; sourceTree = "<group>"; };
-		9A1D53A11EDEB2A800CCCBE7 /* Skeleton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skeleton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A1D53A11EDEB2A800CCCBE7 /* SaitamaCycles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaitamaCycles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A1D53A41EDEB2A800CCCBE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A1D53A91EDEB2A800CCCBE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A1D53AC1EDEB2A800CCCBE7 /* Skeleton.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Skeleton.xcdatamodel; sourceTree = "<group>"; };
@@ -196,7 +196,7 @@
 		9A1D53A21EDEB2A800CCCBE7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9A1D53A11EDEB2A800CCCBE7 /* Skeleton.app */,
+				9A1D53A11EDEB2A800CCCBE7 /* SaitamaCycles.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -445,9 +445,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9A1D53A01EDEB2A800CCCBE7 /* Skeleton */ = {
+		9A1D53A01EDEB2A800CCCBE7 /* SaitamaCycles */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9A1D53B61EDEB2A800CCCBE7 /* Build configuration list for PBXNativeTarget "Skeleton" */;
+			buildConfigurationList = 9A1D53B61EDEB2A800CCCBE7 /* Build configuration list for PBXNativeTarget "SaitamaCycles" */;
 			buildPhases = (
 				F697B037A21817D5676F8A21 /* [CP] Check Pods Manifest.lock */,
 				9A1D539D1EDEB2A800CCCBE7 /* Sources */,
@@ -460,9 +460,9 @@
 			);
 			dependencies = (
 			);
-			name = Skeleton;
+			name = SaitamaCycles;
 			productName = Skeleton;
-			productReference = 9A1D53A11EDEB2A800CCCBE7 /* Skeleton.app */;
+			productReference = 9A1D53A11EDEB2A800CCCBE7 /* SaitamaCycles.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -472,16 +472,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = www.Systango.Skeleton;
 				TargetAttributes = {
 					9A1D53A01EDEB2A800CCCBE7 = {
 						CreatedOnToolsVersion = 8.3.2;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = 62KKE3EAR8;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 9A1D539C1EDEB2A800CCCBE7 /* Build configuration list for PBXProject "Skeleton" */;
+			buildConfigurationList = 9A1D539C1EDEB2A800CCCBE7 /* Build configuration list for PBXProject "SaitamaCycles" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -494,7 +495,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9A1D53A01EDEB2A800CCCBE7 /* Skeleton */,
+				9A1D53A01EDEB2A800CCCBE7 /* SaitamaCycles */,
 			);
 		};
 /* End PBXProject section */
@@ -698,7 +699,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -706,7 +709,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -750,7 +757,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -758,7 +767,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -790,12 +803,15 @@
 			baseConfigurationReference = EC7980D5EE007CF1BCE1D3E8 /* Pods-Skeleton.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 62KKE3EAR8;
 				INFOPLIST_FILE = Skeleton/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Systango.Skeleton;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Saitama.Cycles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Skeleton/Supporting Files/Skeleton-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
@@ -806,12 +822,15 @@
 			baseConfigurationReference = BF82071E7FA08EEA19C8E6C9 /* Pods-Skeleton.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 62KKE3EAR8;
 				INFOPLIST_FILE = Skeleton/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Systango.Skeleton;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Saitama.Cycles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Skeleton/Supporting Files/Skeleton-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
@@ -820,7 +839,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9A1D539C1EDEB2A800CCCBE7 /* Build configuration list for PBXProject "Skeleton" */ = {
+		9A1D539C1EDEB2A800CCCBE7 /* Build configuration list for PBXProject "SaitamaCycles" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9A1D53B41EDEB2A800CCCBE7 /* Debug */,
@@ -829,7 +848,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9A1D53B61EDEB2A800CCCBE7 /* Build configuration list for PBXNativeTarget "Skeleton" */ = {
+		9A1D53B61EDEB2A800CCCBE7 /* Build configuration list for PBXNativeTarget "SaitamaCycles" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9A1D53B71EDEB2A800CCCBE7 /* Debug */,
