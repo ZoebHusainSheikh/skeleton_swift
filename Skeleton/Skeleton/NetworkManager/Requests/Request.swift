@@ -38,28 +38,4 @@ class Request: NSObject {
         let client: NetworkHttpClient = NetworkHttpClient.sharedInstance
         return String.init(format: "%@%@",client.urlPathSubstring, path)
     }
-    
-    public func appendDeviceTokenWith(url: String?) -> String {
-        var editedUrlString: String = Constants.EmptyString
-        let deviceTokenString: String = UserDefaults.standard.value(forKey: Constants.UserDefaultsDeviceTokenKey) as! String
-        
-        if !String.isNilOrEmpty(string: deviceTokenString) {
-            editedUrlString = String.init(format: "%@/%@", url!, deviceTokenString)
-        }
-        
-        return editedUrlString
-    }
-    
-    public func initForDeviceRegistration() -> Any {
-        var deviceToken: String = ""
-        deviceToken = UserDefaults.value(forKey: Constants.UserDefaultsDeviceTokenKey) as! String
-        
-        parameters = [:]
-        parameters[Constants.DeviceTokenKey] = deviceToken
-        parameters[Constants.DeviceInfoKey] = "deviceTestInfo:iPhone6"
-        parameters[Constants.DeviceTypeKey] = "iOS"
-        
-        urlPath = Request.getUrl(path:"kRegisterDeviceURL")
-        return self
-    }
 }

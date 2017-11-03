@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="l4x-hV-BzJ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -16,27 +16,29 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Map View Controller-->
+        <scene sceneID="qdr-hF-yZ4">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SaitamaCycles" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapViewController" id="o1e-tN-hMr" customClass="MapViewController" customModule="SaitamaCycles" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="yNh-0q-Oux"/>
+                        <viewControllerLayoutGuide type="bottom" id="ThI-KR-Hqo"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="mKg-uc-txc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.1960784314" green="0.2901960784" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Yzz-Jp-uRn"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MCr-SZ-rU8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-468" y="-4.0479760119940034"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Authentication View Controller-->
         <scene sceneID="Jm7-g1-k9a">
             <objects>
-                <viewController storyboardIdentifier="sLoginViewController" id="s28-yh-Ua6" customClass="LoginViewController" customModule="SchoolParentManagment" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AuthenticationViewController" id="s28-yh-Ua6" customClass="AuthenticationViewController" customModule="SaitamaCycles" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Njh-uy-Kl5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,16 +46,16 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="nb0-mO-wcf">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your email id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MAs-dZ-hCZ">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your email id" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="MAs-dZ-hCZ">
                                 <rect key="frame" x="10" y="83" width="355" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="BqL-jv-nUQ"/>
                                 </constraints>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
                                 <connections>
-                                    <outlet property="delegate" destination="Njh-uy-Kl5" id="eOg-SO-eW2"/>
+                                    <outlet property="delegate" destination="s28-yh-Ua6" id="Ba0-0u-bbg"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8MC-wb-jbj">
@@ -62,10 +64,10 @@
                                     <constraint firstAttribute="height" constant="45" id="Xrd-OX-ksu"/>
                                 </constraints>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
                                 <connections>
-                                    <outlet property="delegate" destination="Njh-uy-Kl5" id="FQD-pC-y4f"/>
+                                    <outlet property="delegate" destination="s28-yh-Ua6" id="SeZ-ff-vBX"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdz-EO-9po">
@@ -74,7 +76,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="hrg-ZP-Y8N"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="LOGIN">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -84,7 +86,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="btnLoginAction:" destination="s28-yh-Ua6" eventType="touchUpInside" id="iui-yu-K7I"/>
+                                    <action selector="authButtonTapped:" destination="s28-yh-Ua6" eventType="touchUpInside" id="ajK-tj-Qm7"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WTT-vz-gRa">
@@ -104,7 +106,7 @@
                                             <color key="titleColor" red="0.2566121518611908" green="0.44636362791061401" blue="0.24231144785881042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="btnSignUpAction:" destination="s28-yh-Ua6" eventType="touchUpInside" id="RqN-gv-ip1"/>
+                                            <action selector="otherAuthButtonTapped:" destination="s28-yh-Ua6" eventType="touchUpInside" id="MPD-bZ-qPY"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -143,15 +145,34 @@
                     </view>
                     <navigationItem key="navigationItem" id="WIf-fR-yHj"/>
                     <connections>
-                        <outlet property="btnLogin" destination="kdz-EO-9po" id="Wry-Fy-hVH"/>
-                        <outlet property="btnSignUp" destination="HFs-Li-m08" id="Lce-vP-gPT"/>
-                        <outlet property="txtEmail" destination="MAs-dZ-hCZ" id="m4p-j9-6Ov"/>
-                        <outlet property="txtPassword" destination="8MC-wb-jbj" id="LiE-j9-U6e"/>
+                        <outlet property="authButton" destination="kdz-EO-9po" id="eug-HU-Ce2"/>
+                        <outlet property="emailTextField" destination="MAs-dZ-hCZ" id="b3q-ak-oyQ"/>
+                        <outlet property="otherAuthButton" destination="HFs-Li-m08" id="HeB-JB-Rjz"/>
+                        <outlet property="otherLabel" destination="zol-Aw-0Cf" id="pnx-Dy-uIa"/>
+                        <outlet property="passwordTextField" destination="8MC-wb-jbj" id="6Si-Kj-X04"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RoB-Jo-6Tl" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="812" y="11.244377811094454"/>
+            <point key="canvasLocation" x="1151.2" y="11.244377811094454"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="asI-m7-4us">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="l4x-hV-BzJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gfi-QF-jio">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="o1e-tN-hMr" kind="relationship" relationship="rootViewController" id="Rl8-JG-3C3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Icn-N5-HdU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1476" y="-4"/>
         </scene>
     </scenes>
     <resources>

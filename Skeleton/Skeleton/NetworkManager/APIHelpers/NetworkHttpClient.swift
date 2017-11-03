@@ -47,12 +47,8 @@ class NetworkHttpClient: NSObject {
     
     // MARK: API calls
     func getAPICall(_ strURL : String, parameters : Dictionary<String, Any>?, success:@escaping successBlock, failure:@escaping failureBlock) {
-//        var headers:HTTPHeaders = [String:String]()
-//        headers["X-Mashape-Key"] = "gffsVZi52omsh52gxrT335Shh8aNp128WjajsnahxEMl6530yo"
         let headers:HTTPHeaders = ["X-Mashape-Key": "gffsVZi52omsh52gxrT335Shh8aNp128WjajsnahxEMl6530yo", "Accept": "application/json"];
 
-        
-        
         performAPICall(strURL, methodType: .get, parameters: parameters, headers: headers, success: success, failure: failure)
     }
     

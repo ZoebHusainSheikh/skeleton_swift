@@ -15,7 +15,7 @@ typealias CompletionHandler = (_ success: Bool, _ response: Any?) -> Void
 struct Constants {
 
     // MARK: General Constants
-    static let DeviceTokenKey = "device_token"
+    static let kSessionKey = "session_key"
     static let DeviceInfoKey = "device_info"
     static let DeviceTypeKey = "device_type"
     static let EmptyString = ""

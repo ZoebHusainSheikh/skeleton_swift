@@ -15,11 +15,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var isNetworkAvailable: Bool = true
     let reachability = Reachability()!
-
+    
+    //MARK: - Private Methods
+    
+    func openLoginScreenIfRequired() {
+        if UserDefaults.standard.value(forKey: Constants.kSessionKey) == nil {
+            openLoginScreen()
+        }
+    }
+    
+    func openLoginScreen() {
+        let mainStoryBoard = UIStoryboard.init(name: "Main", bundle: nil)
+        let loginController = mainStoryBoard.instantiateViewController(withIdentifier: "AuthenticationViewController")
+        let navController:UINavigationController = UINavigationController(rootViewController: loginController)
+        navController.navigationBar.isHidden = true
+        ApplicationDelegate.window?.rootViewController = navController
+    }
+    
+    //MARK: - Application Life Cycle
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
         setupNetworkMonitoring()
+        openLoginScreenIfRequired()
         return true
     }
 

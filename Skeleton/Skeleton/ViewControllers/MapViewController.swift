@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MapViewController.swift
 //  SaitamaCycles
 //
 //  Created by Zoeb on 31/05/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MapViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,10 +17,6 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        RequestManager().getWordInformation(word: "love", wordInfoType: .definitions) { (success, response) in
-            print(response ?? Constants.kErrorMessage)
-        }
         
     }
 

@@ -10,10 +10,24 @@ import UIKit
 
 class RequestManager: NSObject {
     
-    //MARK: Word API 
-    func getWordInformation(word:String, wordInfoType:WordInfoType, completion:@escaping CompletionHandler){
+    //MARK: Authentication API
+    
+    func performLogin(email:String, password:String, completion:@escaping CompletionHandler){
+        performAuthentication(email: email, password: password, authType: .LoginType, completion: completion)
+    }
+    
+    func performSignup(email:String, password:String, completion:@escaping CompletionHandler){
+        performAuthentication(email: email, password: password, authType: .SignupType, completion: completion)
+    }
+    
+    func performAuthentication(email:String, password:String, authType: AuthType, completion:@escaping CompletionHandler){
         if ApplicationDelegate.isNetworkAvailable{
-            WordInterface().getWordInformation(request: WordRequest().initWordRequest(word: word, wordInfoType: wordInfoType), completion: completion)
+            if authType.isLoginViewActivated() {
+                AuthInterface().performLogin(request: AuthRequest().initwithRequest(email: email, password: password), completion: completion)
+            }
+            else{
+                AuthInterface().performSignup(request: AuthRequest().initwithRequest(email: email, password: password), completion: completion)
+            }
         }
         else{
             completion(false, Constants.kNoNetworkMessage)
