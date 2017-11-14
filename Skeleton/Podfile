@@ -6,14 +6,8 @@ target 'SaitamaCycles' do
   use_frameworks!
 
   # Pods for Skeleton
-  pod 'Realm'
-  pod 'SDWebImage'
-  pod 'SMobiLog'
-  pod 'SVPullToRefresh'
   pod 'Alamofire'
-  pod 'SwiftyJSON'
   pod 'ReachabilitySwift'
-  pod 'ObjectMapper'
   pod 'NotificationBannerSwift'
   pod 'GoogleMaps'
   

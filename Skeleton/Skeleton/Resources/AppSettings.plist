@@ -7,13 +7,13 @@
 	<key>LocalURL</key>
 	<string>127.0.0.1</string>
 	<key>ProductionURL</key>
-	<string>wordsapiv1.p.mashape.com/words/</string>
+	<string>localhost:3000/api/v2.0/</string>
 	<key>StagingURL</key>
-	<string>wordsapiv1.p.mashape.com/words/</string>
+	<string>localhost:3000/api/v2.0/</string>
 	<key>URLPathSubstring</key>
 	<string></string>
 	<key>EnableSecureConnection</key>
-	<true/>
+	<false/>
 	<key>EnablePullToRefresh</key>
 	<false/>
 	<key>EnableBanner</key>

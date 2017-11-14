@@ -2,8 +2,8 @@
 //  RealAPI.swift
 //  SaitamaCycles
 //
-//  Created by Zoeb on 01/06/17.
-//  Copyright © 2017 Zoeb . All rights reserved.
+//  Created by Nilesh K on 01/06/17.
+//  Copyright © 2017. All rights reserved.
 //
 
 import UIKit
@@ -106,19 +106,20 @@ class RealAPI: NSObject, APIInteractor {
     
     //Handling Error response
     func handleError(response: Any?, block: @escaping CompletionHandler) -> Void {
-        let responseStatus = (response as! DataResponse<Any>).response
-        
-        if self.isForbiddenResponse(statusCode: (responseStatus?.statusCode)!) {
-            realAPIBlock = block
-            renewLogin()
-            return
+        if let responseStatus = (response as! DataResponse<Any>).response{
+           
+            if self.isForbiddenResponse(statusCode: (responseStatus.statusCode)) {
+                realAPIBlock = block
+                renewLogin()
+                return
+            }
         }
         
         var errorResponse: Any?
         
         let error : Error? = (response as! DataResponse<Any>).result.error!
         
-        let detailedError: NSError = error as! NSError
+        let detailedError: NSError = error! as NSError
         if detailedError.localizedRecoverySuggestion != nil {
             do {
                 errorResponse = try JSONSerialization.jsonObject(with: (detailedError.localizedRecoverySuggestion?.data(using: String.Encoding.utf8))!, options: JSONSerialization.ReadingOptions.mutableContainers)

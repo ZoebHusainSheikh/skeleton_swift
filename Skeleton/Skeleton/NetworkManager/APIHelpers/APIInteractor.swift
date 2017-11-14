@@ -2,8 +2,8 @@
 //  APIInteractor.swift
 //  SaitamaCycles
 //
-//  Created by Zoeb on 29/05/17.
-//  Copyright © 2017 Zoeb . All rights reserved.
+//  Created by Nilesh K on 29/05/17.
+//  Copyright © 2017. All rights reserved.
 //
 
 import UIKit

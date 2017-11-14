@@ -2,8 +2,8 @@
 //  NetworkHttpClient.swift
 //  SaitamaCycles
 //
-//  Created by Zoeb on 31/05/17.
-//  Copyright © 2017 Zoeb . All rights reserved.
+//  Created by Nilesh K on 31/05/17.
+//  Copyright © 2017. All rights reserved.
 //
 
 import UIKit
@@ -47,8 +47,7 @@ class NetworkHttpClient: NSObject {
     
     // MARK: API calls
     func getAPICall(_ strURL : String, parameters : Dictionary<String, Any>?, success:@escaping successBlock, failure:@escaping failureBlock) {
-        let headers:HTTPHeaders = ["X-Mashape-Key": "gffsVZi52omsh52gxrT335Shh8aNp128WjajsnahxEMl6530yo", "Accept": "application/json"];
-
+        let headers : HTTPHeaders = NetworkHttpClient.getHeader() as! HTTPHeaders
         performAPICall(strURL, methodType: .get, parameters: parameters, headers: headers, success: success, failure: failure)
     }
     
@@ -99,5 +98,14 @@ class NetworkHttpClient: NSObject {
                 failure(encodingError)
             }
         })
+    }
+    
+    class func getHeader() -> Dictionary<String, Any> {
+        var header: HTTPHeaders = [String : String]()
+        if UserDefaults.standard.value(forKey: Constants.kSessionKey) != nil {
+            header[Constants.kSessionKey] = UserDefaults.standard.value(forKey: Constants.kSessionKey) as? String
+        }
+        NSLog("Header: \(header)")
+        return header
     }
 }

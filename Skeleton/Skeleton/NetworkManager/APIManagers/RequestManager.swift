@@ -2,8 +2,8 @@
 //  RequestManager.swift
 //  SaitamaCycles
 //
-//  Created by Zoeb on 05/06/17.
-//  Copyright © 2017 Zoeb . All rights reserved.
+//  Created by Nilesh K on 05/06/17.
+//  Copyright © 2017. All rights reserved.
 //
 
 import UIKit
@@ -23,11 +23,47 @@ class RequestManager: NSObject {
     func performAuthentication(email:String, password:String, authType: AuthType, completion:@escaping CompletionHandler){
         if ApplicationDelegate.isNetworkAvailable{
             if authType.isLoginViewActivated() {
-                AuthInterface().performLogin(request: AuthRequest().initwithRequest(email: email, password: password), completion: completion)
+                Interface().performLogin(request: Request().initwithAuthRequest(email: email, password: password), completion: completion)
             }
             else{
-                AuthInterface().performSignup(request: AuthRequest().initwithRequest(email: email, password: password), completion: completion)
+                Interface().performSignup(request: Request().initwithAuthRequest(email: email, password: password), completion: completion)
             }
+        }
+        else{
+            completion(false, Constants.kNoNetworkMessage)
+            BannerManager.showFailureBanner(subtitle: Constants.kNoNetworkMessage)
+        }
+    }
+    
+    //MARK: Payment Creation API
+    
+    func performPaymentCreation(placeId:String, creditCard:CreditCardModel, completion:@escaping CompletionHandler){
+        if ApplicationDelegate.isNetworkAvailable{
+            Interface().paymentCreation(request: Request().initwithPaymentCreationRequest(placeId: placeId, creditCard: creditCard), completion: completion)
+        }
+        else{
+            completion(false, Constants.kNoNetworkMessage)
+            BannerManager.showFailureBanner(subtitle: Constants.kNoNetworkMessage)
+        }
+    }
+    
+    //MARK: Payment List API
+    
+    func getPaymentList(completion:@escaping CompletionHandler){
+        if ApplicationDelegate.isNetworkAvailable{
+            Interface().paymentList(request: Request().initwithPaymentListRequest(), completion: completion)
+        }
+        else{
+            completion(false, Constants.kNoNetworkMessage)
+            BannerManager.showFailureBanner(subtitle: Constants.kNoNetworkMessage)
+        }
+    }
+    
+    //MARK: Place List API
+    
+    func getPlaceList(completion:@escaping CompletionHandler){
+        if ApplicationDelegate.isNetworkAvailable{
+            Interface().getPlaceList(request: Request().initwithPlacesRequest(), completion: completion)
         }
         else{
             completion(false, Constants.kNoNetworkMessage)

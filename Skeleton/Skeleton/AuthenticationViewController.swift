@@ -2,7 +2,7 @@
 //  AuthenticationViewController.swift
 //  SaitamaCycles
 //
-//  Created by Best Peers on 03/11/17.
+//  Created by Nilesh K on 03/11/17.
 //  Copyright © 2017 www.Systango.Skeleton. All rights reserved.
 //
 

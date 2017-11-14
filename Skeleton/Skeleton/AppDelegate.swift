@@ -2,12 +2,13 @@
 //  AppDelegate.swift
 //  SaitamaCycles
 //
-//  Created by Zoeb on 31/05/17.
-//  Copyright © 2017 Zoeb . All rights reserved.
+//  Created by Nilesh K on 31/05/17.
+//  Copyright © 2017. All rights reserved.
 //
 
 import UIKit
 import Reachability
+import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -39,6 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         setupNetworkMonitoring()
         openLoginScreenIfRequired()
+        GMSServices.provideAPIKey("AIzaSyCfJxhaFanEMCcZ7L_ffUkjCitaWtOkyOo")
         return true
     }
 

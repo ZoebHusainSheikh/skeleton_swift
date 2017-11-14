@@ -2,8 +2,8 @@
 //  BannerManager.swift
 //  SaitamaCycles
 //
-//  Created by Best Peers on 17/10/17.
-//  Copyright © 2017 www.Zoeb.SaitamaCycles. All rights reserved.
+//  Created by Nilesh K on 17/10/17.
+//  Copyright © 2017 www.Nilesh K.SaitamaCycles. All rights reserved.
 //
 
 import UIKit

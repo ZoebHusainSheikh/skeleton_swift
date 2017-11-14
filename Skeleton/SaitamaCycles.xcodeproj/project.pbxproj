@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		361B0755277EF22C4EAEB563 /* Pods_SaitamaCycles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF25DE17EECBE8C4022A9522 /* Pods_SaitamaCycles.framework */; };
 		484C34B31F95C5A9004F65C4 /* BannerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C34B21F95C5A8004F65C4 /* BannerManager.swift */; };
 		485EBF191FAC4FC000FB322C /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EBF181FAC4FC000FB322C /* AuthenticationViewController.swift */; };
 		485EBF1F1FAC642B00FB322C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EBF1E1FAC642B00FB322C /* BaseViewController.swift */; };
-		485EBF211FAC7E5700FB322C /* AuthInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EBF201FAC7E5700FB322C /* AuthInterface.swift */; };
-		485EBF231FAC7ECE00FB322C /* AuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EBF221FAC7ECE00FB322C /* AuthRequest.swift */; };
+		485EBF251FAC9E1800FB322C /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485EBF241FAC9E1800FB322C /* PaymentViewController.swift */; };
 		4878156D1F9483A300873D9F /* Interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878156C1F9483A300873D9F /* Interface.swift */; };
-		4878156F1F948C2600873D9F /* WordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878156E1F948C2600873D9F /* WordModel.swift */; };
 		9A1D53A51EDEB2A800CCCBE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1D53A41EDEB2A800CCCBE7 /* AppDelegate.swift */; };
 		9A1D53AA1EDEB2A800CCCBE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A1D53A81EDEB2A800CCCBE7 /* Main.storyboard */; };
 		9A1D53AD1EDEB2A800CCCBE7 /* Skeleton.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A1D53AB1EDEB2A800CCCBE7 /* Skeleton.xcdatamodeld */; };
@@ -80,18 +79,18 @@
 		9A1D558C1EE047D100CCCBE7 /* TestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1D558B1EE047D100CCCBE7 /* TestAPI.swift */; };
 		9A6A2D011EF78BE40045FD53 /* RemoteNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6A2D001EF78BE40045FD53 /* RemoteNotificationManager.swift */; };
 		9AFE9A631EE5644800B1D6C3 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFE9A621EE5644800B1D6C3 /* RequestManager.swift */; };
-		EDFC0A0A8605273A44FE61E9 /* Pods_Skeleton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06BF5BC2524B1EC194944A50 /* Pods_Skeleton.framework */; };
+		CC408E7A1FADFD82004EA303 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC408E791FADFD81004EA303 /* PlaceModel.swift */; };
+		CC408E7C1FADFE02004EA303 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC408E7B1FADFE02004EA303 /* LocationModel.swift */; };
+		CC6CDCE61FADA9040090B8B1 /* CreditCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6CDCE51FADA9030090B8B1 /* CreditCardModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		06BF5BC2524B1EC194944A50 /* Pods_Skeleton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skeleton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C8B1612A866300FD5CFC72B /* Pods-SaitamaCycles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaitamaCycles.release.xcconfig"; path = "Pods/Target Support Files/Pods-SaitamaCycles/Pods-SaitamaCycles.release.xcconfig"; sourceTree = "<group>"; };
 		484C34B21F95C5A8004F65C4 /* BannerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerManager.swift; sourceTree = "<group>"; };
 		485EBF181FAC4FC000FB322C /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		485EBF1E1FAC642B00FB322C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		485EBF201FAC7E5700FB322C /* AuthInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInterface.swift; sourceTree = "<group>"; };
-		485EBF221FAC7ECE00FB322C /* AuthRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequest.swift; sourceTree = "<group>"; };
+		485EBF241FAC9E1800FB322C /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		4878156C1F9483A300873D9F /* Interface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interface.swift; sourceTree = "<group>"; };
-		4878156E1F948C2600873D9F /* WordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordModel.swift; sourceTree = "<group>"; };
 		9A1D53A11EDEB2A800CCCBE7 /* SaitamaCycles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaitamaCycles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A1D53A41EDEB2A800CCCBE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A1D53A91EDEB2A800CCCBE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -162,8 +161,11 @@
 		9A1D558B1EE047D100CCCBE7 /* TestAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAPI.swift; sourceTree = "<group>"; };
 		9A6A2D001EF78BE40045FD53 /* RemoteNotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteNotificationManager.swift; sourceTree = "<group>"; };
 		9AFE9A621EE5644800B1D6C3 /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
-		BF82071E7FA08EEA19C8E6C9 /* Pods-Skeleton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skeleton.release.xcconfig"; path = "Pods/Target Support Files/Pods-Skeleton/Pods-Skeleton.release.xcconfig"; sourceTree = "<group>"; };
-		EC7980D5EE007CF1BCE1D3E8 /* Pods-Skeleton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skeleton.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Skeleton/Pods-Skeleton.debug.xcconfig"; sourceTree = "<group>"; };
+		CC408E791FADFD81004EA303 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
+		CC408E7B1FADFE02004EA303 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		CC6CDCE51FADA9030090B8B1 /* CreditCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardModel.swift; sourceTree = "<group>"; };
+		CF25DE17EECBE8C4022A9522 /* Pods_SaitamaCycles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaitamaCycles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D872E3B3277C47048DCAFA15 /* Pods-SaitamaCycles.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaitamaCycles.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SaitamaCycles/Pods-SaitamaCycles.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,7 +173,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDFC0A0A8605273A44FE61E9 /* Pods_Skeleton.framework in Frameworks */,
+				361B0755277EF22C4EAEB563 /* Pods_SaitamaCycles.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,8 +183,8 @@
 		53E5F7B68AE7AF0D47CFF920 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EC7980D5EE007CF1BCE1D3E8 /* Pods-Skeleton.debug.xcconfig */,
-				BF82071E7FA08EEA19C8E6C9 /* Pods-Skeleton.release.xcconfig */,
+				D872E3B3277C47048DCAFA15 /* Pods-SaitamaCycles.debug.xcconfig */,
+				0C8B1612A866300FD5CFC72B /* Pods-SaitamaCycles.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -230,9 +232,10 @@
 		9A1D54F81EDECA4700CCCBE7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				9A1D55021EDECCD600CCCBE7 /* MapViewController.swift */,
-				485EBF181FAC4FC000FB322C /* AuthenticationViewController.swift */,
 				485EBF1E1FAC642B00FB322C /* BaseViewController.swift */,
+				485EBF181FAC4FC000FB322C /* AuthenticationViewController.swift */,
+				9A1D55021EDECCD600CCCBE7 /* MapViewController.swift */,
+				485EBF241FAC9E1800FB322C /* PaymentViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -277,7 +280,9 @@
 		9A1D55081EDED20C00CCCBE7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				4878156E1F948C2600873D9F /* WordModel.swift */,
+				CC6CDCE51FADA9030090B8B1 /* CreditCardModel.swift */,
+				CC408E791FADFD81004EA303 /* PlaceModel.swift */,
+				CC408E7B1FADFE02004EA303 /* LocationModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -317,7 +322,6 @@
 			isa = PBXGroup;
 			children = (
 				9A1D550F1EDED20C00CCCBE7 /* Request.swift */,
-				485EBF221FAC7ECE00FB322C /* AuthRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -326,7 +330,6 @@
 			isa = PBXGroup;
 			children = (
 				4878156C1F9483A300873D9F /* Interface.swift */,
-				485EBF201FAC7E5700FB322C /* AuthInterface.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -443,7 +446,7 @@
 		AD308C9FF357B387CA84B8C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				06BF5BC2524B1EC194944A50 /* Pods_Skeleton.framework */,
+				CF25DE17EECBE8C4022A9522 /* Pods_SaitamaCycles.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -528,7 +531,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Skeleton/Pods-Skeleton-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-SaitamaCycles/Pods-SaitamaCycles-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/KSCrash/KSCrash.framework",
 				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
@@ -559,7 +562,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Skeleton/Pods-Skeleton-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SaitamaCycles/Pods-SaitamaCycles-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E420A2036C9DFE7259A0C680 /* [CP] Copy Pods Resources */ = {
@@ -568,13 +571,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SaitamaCycles/Pods-SaitamaCycles-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Skeleton/Pods-Skeleton-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SaitamaCycles/Pods-SaitamaCycles-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F697B037A21817D5676F8A21 /* [CP] Check Pods Manifest.lock */ = {
@@ -588,7 +594,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Skeleton-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SaitamaCycles-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -621,9 +627,9 @@
 				9A1D557B1EE019A800CCCBE7 /* UITabBarExtensions.swift in Sources */,
 				484C34B31F95C5A9004F65C4 /* BannerManager.swift in Sources */,
 				9A1D55761EE019A800CCCBE7 /* UISearchBarExtensions.swift in Sources */,
-				485EBF231FAC7ECE00FB322C /* AuthRequest.swift in Sources */,
 				9A1D556D1EE019A800CCCBE7 /* UIButtonExtensions.swift in Sources */,
 				9A1D557F1EE019A800CCCBE7 /* UIViewControllerExtensions.swift in Sources */,
+				485EBF251FAC9E1800FB322C /* PaymentViewController.swift in Sources */,
 				9A1D556E1EE019A800CCCBE7 /* UICollectionViewExtensions.swift in Sources */,
 				9A1D55031EDECCD600CCCBE7 /* MapViewController.swift in Sources */,
 				9A1D55191EDED20C00CCCBE7 /* Request.swift in Sources */,
@@ -651,10 +657,12 @@
 				9A1D555C1EE019A800CCCBE7 /* CLLocationExtensions.swift in Sources */,
 				9A1D557E1EE019A800CCCBE7 /* UITextViewExtensions.swift in Sources */,
 				9A1D55591EE019A800CCCBE7 /* CGFloatExtensions.swift in Sources */,
+				CC408E7C1FADFE02004EA303 /* LocationModel.swift in Sources */,
 				9A1D555A1EE019A800CCCBE7 /* CGPointExtensions.swift in Sources */,
 				9A1D55751EE019A800CCCBE7 /* UINavigationItemExtensions.swift in Sources */,
 				9A1D55721EE019A800CCCBE7 /* UILabelExtensions.swift in Sources */,
 				9A1D556F1EE019A800CCCBE7 /* UIColorExtensions.swift in Sources */,
+				CC408E7A1FADFD82004EA303 /* PlaceModel.swift in Sources */,
 				9A1D55561EE019A800CCCBE7 /* BoolExtensions.swift in Sources */,
 				9A1D55181EDED20C00CCCBE7 /* NetworkHttpClient.swift in Sources */,
 				9A1D53A51EDEB2A800CCCBE7 /* AppDelegate.swift in Sources */,
@@ -667,9 +675,8 @@
 				9A1D53AD1EDEB2A800CCCBE7 /* Skeleton.xcdatamodeld in Sources */,
 				9A1D55171EDED20C00CCCBE7 /* APIInteractor.swift in Sources */,
 				9A1D55241EE016F100CCCBE7 /* Constants.swift in Sources */,
+				CC6CDCE61FADA9040090B8B1 /* CreditCardModel.swift in Sources */,
 				9A1D55741EE019A800CCCBE7 /* UINavigationControllerExtensions.swift in Sources */,
-				485EBF211FAC7E5700FB322C /* AuthInterface.swift in Sources */,
-				4878156F1F948C2600873D9F /* WordModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -808,7 +815,7 @@
 		};
 		9A1D53B71EDEB2A800CCCBE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC7980D5EE007CF1BCE1D3E8 /* Pods-Skeleton.debug.xcconfig */;
+			baseConfigurationReference = D872E3B3277C47048DCAFA15 /* Pods-SaitamaCycles.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -827,7 +834,7 @@
 		};
 		9A1D53B81EDEB2A800CCCBE7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF82071E7FA08EEA19C8E6C9 /* Pods-Skeleton.release.xcconfig */;
+			baseConfigurationReference = 0C8B1612A866300FD5CFC72B /* Pods-SaitamaCycles.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

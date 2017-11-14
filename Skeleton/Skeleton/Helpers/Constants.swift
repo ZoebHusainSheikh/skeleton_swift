@@ -2,8 +2,8 @@
 //  Constants.swift
 //  SaitamaCycles
 //
-//  Created by Zoeb on 01/06/17.
-//  Copyright © 2017 Zoeb . All rights reserved.
+//  Created by Nilesh K on 01/06/17.
+//  Copyright © 2017. All rights reserved.
 //
 
 import Foundation
@@ -15,7 +15,7 @@ typealias CompletionHandler = (_ success: Bool, _ response: Any?) -> Void
 struct Constants {
 
     // MARK: General Constants
-    static let kSessionKey = "session_key"
+    static let kSessionKey = "Authorization"
     static let DeviceInfoKey = "device_info"
     static let DeviceTypeKey = "device_type"
     static let EmptyString = ""

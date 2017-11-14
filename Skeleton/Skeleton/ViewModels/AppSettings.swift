@@ -2,8 +2,8 @@
 //  AppSettings.swift
 //  SaitamaCycles
 //
-//  Created by Zoeb on 01/06/17.
-//  Copyright © 2017 Zoeb . All rights reserved.
+//  Created by Nilesh K on 01/06/17.
+//  Copyright © 2017. All rights reserved.
 //
 
 import UIKit
