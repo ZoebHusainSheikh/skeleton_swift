@@ -102,9 +102,9 @@ class NetworkHttpClient: NSObject {
     class func getHeader() -> Dictionary<String, Any> {
         var header: HTTPHeaders = [String : String]()
         if UserDefaults.standard.value(forKey: Constants.kSessionKey) != nil {
-            header[Constants.kSessionKey] = UserDefaults.standard.value(forKey: Constants.kSessionKey) as? String
+            header[Constants.kSessionKey] = "Bearer " + (UserDefaults.standard.value(forKey: Constants.kSessionKey) as! String)
         }
-        NSLog("Header: \(header)")
+        print("Header: \(header)")
         return header
     }
 }

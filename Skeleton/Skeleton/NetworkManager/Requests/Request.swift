@@ -60,13 +60,13 @@ class Request: NSObject {
         parameters["expiryYear"] = creditCard.expiryYear
         parameters["cvv"] = creditCard.cvv
         urlPath = paymentCreationUrl
-        headers = NetworkHttpClient.getHeader() as! HTTPHeaders
+        headers = NetworkHttpClient.getHeader() as? HTTPHeaders
         return self
     }
     
     func initwithPaymentListRequest() -> Request{
         urlPath = paymentCreationUrl
-        headers = NetworkHttpClient.getHeader() as! HTTPHeaders
+        headers = NetworkHttpClient.getHeader() as? HTTPHeaders
         return self
     }
     

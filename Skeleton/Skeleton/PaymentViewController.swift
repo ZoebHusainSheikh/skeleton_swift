@@ -47,8 +47,8 @@ class PaymentViewController: BaseViewController {
             message = "Please enter name on the card"
         } else if monthTextField?.text?.trimmed.length != 2 {
             message = "Please enter a valid month"
-        } else if yearTextField?.text?.trimmed.length != 2 {
-            message = "Year must contain 2 characters"
+        } else if yearTextField?.text?.trimmed.length != 4 {
+            message = "Year must contain 4 characters"
         } else if (cvvTextField?.text?.trimmed.length)! < 3 ||  (cvvTextField?.text?.trimmed.length)! > 4 {
             message = "Please enter a valid CVV"
         }
