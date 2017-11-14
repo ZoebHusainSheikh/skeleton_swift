@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SMobiLog
 import Alamofire
 
 class RealAPI: NSObject, APIInteractor {
@@ -124,48 +123,12 @@ class RealAPI: NSObject, APIInteractor {
             do {
                 errorResponse = try JSONSerialization.jsonObject(with: (detailedError.localizedRecoverySuggestion?.data(using: String.Encoding.utf8))!, options: JSONSerialization.ReadingOptions.mutableContainers)
                 let message: String = String.init(format: "\n Error :Failure with error: %@", detailedError.localizedRecoverySuggestion!)
-                SMobiLogger.sharedInterface().error(String.init(format: "%s", #function), withDescription: message)
                 errorResponse != nil ? block(false, errorResponse) : block(false, error)
             }
             catch _ {
                 // Error handling
             }
         }
-        /*else if error?.localizedDescription != nil {
-            var message: String = String.init(format: "\n Error :Failure with error: %@", error!.localizedDescription)
-            SMobiLogger.sharedInterface().error(String.init(format: "%s", #function), withDescription: message)
-            
-            let errorData: Data? = detailedError.userInfo[AFNetworkingOperationFailingURLResponseDataErrorKey] as? Data
-            var serializedData: Any?
-            if errorData != nil {
-                do {
-                    serializedData = try JSONSerialization.jsonObject(with: errorData!)
-                    if serializedData is Dictionary<String, Any> {
-                        //Banner.showFailure(subtitle: serializedData["error"])
-                    }
-                }
-                catch _ {
-                    // Error handling
-                }
-            } else {
-                serializedData = ["message": error?.localizedDescription]
-                //Banner.showFailure(subtitle: error?.localizedDescription)
-            }
-            
-            message = String.init(format: "Failure error serialised - %@",serializedData as! CVarArg)
-            
-            if serializedData == nil {
-                serializedData = ["message": "An error occured while processing your request."]
-                //Banner.showFailure(subtitle:"An error occured while processing your request.")
-            }
-            
-            if responseStatus?.statusCode == Constants.ResponseStatusForbidden {
-                // *> Show Alert
-                //ApplicationDelegate.showAlert(message: "Your session expired", logout: true)
-            }
-            block(false, serializedData)
-        }*/
-        
         else {
             block(false, detailedError.description)
         }
